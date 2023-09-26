@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,8 +94,8 @@
                         <a href="http://test.jetacomms.tech/" class="dropdown-item">JETA-CBT</a>
                     </div>
                 </div>
-                <a href="/jeta-authreg/index.php" class="nav-item nav-link">Portal</a>
-                <a href="" class="nav-item nav-link">Gallery</a>
+                <a href="/jeta-authreg/index.html" class="nav-item nav-link">Portal</a>
+                <a href="galleries.html" class="nav-item nav-link">Gallery</a>
                 <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
             </div>
             <!-- <a href="" class="btn green-bg py-4 px-lg-5 d-none d-lg-block">Register Now<i class="fa fa-arrow-right ms-3"></i></a> -->
@@ -259,7 +260,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="d-flex  py-5 px-4">
                       
-                            <iframe width="300" height="170" style="border:none; border-radius: 8px;" src="https://www.youtube.com/embed/xIcie0oX6FE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="300" height="170" style="border:none; border-radius: 8px;" src="https://www.youtube.com/embed/UvFgqYxmLtg?si=vXplluCBKAf0B86J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           
                     </div>
                 </div>
@@ -494,44 +495,46 @@
                 <div class="col-lg-6" >
                     <div class="green-bg h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
                         <h1 class="text-white mb-4">Book For A Service</h1>
-                        <form>
+                       
+                        <form method="POST" name="ServicesForm" action="mailto:jetacomms@gmail.com" >
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" required style="height: 55px;">
+                                    <input type="text" name="name" class="form-control border-0" placeholder="Your Name" required style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" required style="height: 55px;">
+                                    <input type="email" name="email" class="form-control border-0" placeholder="Your Email" required style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" required style="height: 55px;">
+                                    <select name='service' class="form-select border-0" required style="height: 55px;">
                                         <option selected>Select A Service</option>
-                                        <option value="1">Web Development</option>
-                                        <option value="1">Mobile App Development</option>
-                                        <option value="2">Graphic Design</option>
-                                        <option value="3">Digital Marketing</option>
-                                        <option value="4">AI Programming with MATLAB and Python</option>
-                                        <option value="5">Data Analytics with Python</option>
-                                        <option value="6">Research Computing with MATLAB and Python</option>
-                                        <option value="4">Embedded Programming with C/C++</option>
+                                        <option name=' service' value="1">Web Development</option>
+                                        <option name=' service' value="1">Mobile App Development</option>
+                                        <option name=' service' value="2">Graphic Design</option>
+                                        <option name=' service' value="3">Digital Marketing</option>
+                                        <option name=' service' value="4">AI Programming with MATLAB and Python</option>
+                                        <option name=' service' value="5">Data Analytics with Python</option>
+                                        <option name=' service' value="6">Research Computing with MATLAB and Python</option>
+                                        <option name=' service' value="4">Embedded Programming with C/C++</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" required class="form-control border-0 datetimepicker-input"
+                                        <input type="text" name='date' required class="form-control border-0 datetimepicker-input"
                                             placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <input type="tel" class="form-control border-0" name="" id="" required placeholder="Contact Number">
+                                    <input type="tel" name='phone' class="form-control border-0" name="" id="" required placeholder="Contact Number">
                                 </div>
                                 <div class="col-12">
-                                    <textarea required class="form-control border-0" placeholder="Special Request"></textarea>
+                                    <textarea required name='message' class="form-control border-0" placeholder="Special Request"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-secondary w-100 red-bg py-3" type="submit">Book Now</button>
+                                    <button class="btn btn-secondary w-100 red-bg py-3" name='bookbtn' type="submit">Book Now</button>
                                 </div>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
@@ -628,7 +631,6 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <!--i style="font-size: 40px; display: block; right: 20px; position:absolute;" class="fas fa-check-circle text-success" ></i> -->
                             <img class="img-fluid" src="img/jeta-software-intern-2023.png" alt="">
                         </div>
                         <div class="bg-light text-center p-4">
@@ -781,3 +783,4 @@
 </body>
 
 </html>
+
