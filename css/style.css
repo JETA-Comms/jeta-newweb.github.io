@@ -3,6 +3,29 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 } */
+.ppp{
+    font-weight: 700;
+}
+.whatsapplink{
+    background-color: #00a859;
+    width: 7rem;
+    height: 3rem;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 13px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.whatsapplink:hover{
+    color: white;
+    background-color: #028b4b;
+    transition: 1s ease-in-out;
+    
+}
 
 :root {
     --primary: #00a859;
