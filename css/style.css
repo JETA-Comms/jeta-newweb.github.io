@@ -1,8 +1,4 @@
-/********** Template CSS **********/
-/* *{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-} */
 .ppp{
     font-weight: 700;
 }
@@ -40,6 +36,13 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.bg-green{
+    background: #00a859;
+}
+
+.bg-red{
+    background: #eb3338;
+}
 .green{
     color: #00a859;
 }
@@ -123,6 +126,7 @@
     font-weight: normal;
     border-radius: 2px;
 }
+
 
 
 /*** Navbar ***/
@@ -301,6 +305,111 @@
     border-bottom-color: var(--primary);
 }
 
+
+/* ===============BLOG POST START============ */
+
+.blog_container{
+    box-sizing: border-box;
+    padding: auto;
+    margin: 25px;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.blog_container .blog_post{
+    width: 94%;
+    background: whitesmoke;
+    max-height: 40rem;
+    border: none;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(188, 188, 188);
+   
+}
+
+.blog_container .blog_post:hover{
+    transform: scaleY(10px);
+}
+
+.blog_post .blog_img img{
+    max-width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.blog_post .blog_text{
+    padding: 20px;
+}
+
+.blog_post .blog_title h2{
+    color: #eb3338;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.blog_post .blog_text p{
+    color: rgb(107, 107, 107);
+}
+
+
+.blog-sub-nav{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.blog-sub-nav .blog-nav-link{
+    text-align: center;
+    margin:0 25px;
+    padding: 10px 0;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.btn-blog{
+
+    background-color: #00a859;
+    width: 10rem;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+    /* margin-top: 13px; */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    
+
+}
+
+.btn-blog:hover{
+    color: white;
+    background-color: #028b4b;
+    transition: 1s ease-in-out;
+    
+}
+
+
+
+
+
+
+
+
+/* ======= BLOG POST END */
+
+
 /*=========================== Galleries ==============*/
 .dcard {
     margin: 0;
@@ -442,6 +551,27 @@
     color: #FFFFFF;
     background: var(--secondary)
 }
+/* ======JETA TEAM MARQUEE====== */
+
+.jeta-item-marquee{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    /* animation: move-horizontal 5s linear infinite; */
+  
+}
+
+
+
+/* @keyframes move-horizontal {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100px);
+    }
+  } */
+
 
 
 /*** Footer ***/
