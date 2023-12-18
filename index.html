@@ -31,6 +31,82 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+<style>
+.team-item img{
+    width: 180px;
+    height: auto;
+}
+    .team-item-fixed{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto auto auto ;
+
+    }
+    .team-item{
+        display: grid;
+    }
+    .team-caption{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+
+    }
+    .team-item-scroll img{
+        width: 180px;
+        height: auto;
+    }
+    .bg-light{
+        width: 100%;
+        padding: 30px;
+    }
+    .jeta-item-marquee{
+        display: flex;
+    }
+@media screen and (max-width:1200px){
+
+    .team-item img{
+        width: 200px;
+    }
+    .team-item-fixed{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto auto auto  ;
+    }
+}
+@media screen and (max-width:990px){
+
+    .team-item img{
+        width: 250px;
+    }
+    .team-item-fixed{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto auto   ;
+    }
+}
+@media screen and (max-width:770px){
+    .team-item img{
+        width: 300px;
+    }
+    .team-item-fixed{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto   ;
+    }
+}
+@media screen and (max-width:600px){
+    .team-item img{
+        width: 350px;
+    }
+    .team-item-fixed{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto   ;
+        justify-content: center;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -554,49 +630,59 @@
                 <h6 class="text-primary text-uppercase">// JETA team //</h6>
                 <h1 class="mb-5 green">JETA Team</h1>
             </div>
-            <div class="">
-                <div class="team-item-fixed row g-6">
+                <div class="team-item-fixed">
 
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
+                    <div class=" wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item ">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid" src="./img/jeta-communication-managing-director.png" alt="">
                             </div>
-                            <div class="bg-light text-center p-4">
-                                <h5 class="fw-bold mb-0">Mrs. Joy N. ADETIBA</h5>
+                            <div class="bg-light team-caption">
+                                <h5 class="fw-bold ">Mrs. Joy N. ADETIBA</h5>
                                 <small>Managing Director</small>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class=" wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/jeta-edutech.png" alt="">
+                                <img class="img-fluid" src="img/jeta-edutech.png" alt="" >
                             </div>
-                            <div class="bg-light text-center p-4">
-                                <h5 class="fw-bold mb-0">Oluwagbenga H. JIMOH</h5>
+                            <div class="bg-light team-caption">
+                                <h5 class="fw-bold ">Oluwagbenga H. JIMOH</h5>
                                 <small>EduTech Officer</small>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class=" wow fadeInUp" data-wow-delay="0.9s">
+                        <div class="team-item">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/jeta-communication-team-2022.png" alt="">
+                            </div>
+                            <div class="bg-light team-caption" style="text-wrap:wrap;">
+                                <h5 class="fw-bold ">Mayomi P. ODEWAYE</h5>
+                                <small>National Diploma/Software Development Intern(2022)</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item">
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid" src="img/adekunle-blessing.png" alt="">
                             </div>
-                            <div class="bg-light text-center p-4">
-                                <h5 class="fw-bold mb-0">Blessing O. ADEKUNLE</h5>
+                            <div class="bg-light team-caption">
+                                <h5 class="fw-bold ">Blessing O. ADEKUNLE</h5>
                                 <small>National Diploma/Software Development Intern(2023) and Digital Marketer</small>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class=" wow fadeInUp" data-wow-delay="0.6s">
                         <div class="team-item">
                             <div class="positive-relative overflow-hidden">
                                 <img class="img-fluid" src="img/dacostapix.png" alt="">
                             </div>
-                            <div class="bg-light text-center p-4">
-                                <h5 class="fw-bold mb-0">Aduragbemi T. DACOSTA</h5>
+                            <div class="bg-light team-caption">
+                                <h5 class="fw-bold ">Aduragbemi T. DACOSTA</h5>
                                 <small> Bachelor of Science/Software Development Intern(2023)</small>
                             </div>
                         </div>
@@ -607,71 +693,60 @@
 
                 <marquee behavior="scroll" direction="left" scrollamount="10"  loop="">
                     <div class="jeta-item-marquee ">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                            <div class="team-item">
+                        <div class="  wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="team-item-scroll">
                                 <div class="position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/team last.png" alt="">
                                 </div>
-                                <div class="bg-light text-center p-4">
-                                    <h5 class="fw-bold mb-0">David O. OMOTOSHO</h5>
+                                <div class="bg-light ">
+                                    <h5 class="fw-bold">David O. OMOTOSHO</h5>
                                     <small>National Diploma Intern(2020)</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
-                            <div class="team-item">
+                        <div class="  wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="team-item-scroll">
                                 <div class="position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/me.jpg" alt="">
                                 </div>
-                                <div class="bg-light text-center p-4">
-                                    <h5 class="fw-bold mb-0">Mercy V. IBIRINDE</h5>
+                                <div class="bg-light ">
+                                    <h5 class="fw-bold">Mercy V. IBIRINDE</h5>
                                     <small>Asst. EduTech Officer</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                            <div class="team-item">
+                        <div class="  wow fadeInUp" data-wow-delay="0.9s">
+                            <div class="team-item-scroll">
                                 <div class="position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/johnson.jpg" alt="">
                                 </div>
-                                <div class="bg-light text-center p-4">
-                                    <h5 class="fw-bold mb-0">Johnson A. ILEYEMI</h5>
+                                <div class="bg-light ">
+                                    <h5 class="fw-bold">Johnson A. ILEYEMI</h5>
                                     <small>Asst. EduTech Officer</small>
                                 </div>
                             </div>
                         </div>
                       
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                            <div class="team-item">
-                                <div class="position-relative overflow-hidden">
-                                    <img class="img-fluid" src="img/jeta-communication-team-2022.png" alt="">
-                                </div>
-                                <div class="bg-light text-center p-4" style="text-wrap:wrap;">
-                                    <h5 class="fw-bold mb-0">Mayomi P. ODEWAYE</h5>
-                                    <small>National Diploma/Software Development Intern(2022)</small>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                            <div class="team-item">
+                        <div class="  wow fadeInUp" data-wow-delay="0.9s">
+                            <div class="team-item-scroll">
                                 <div class="position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/akintola-abdulazeem.png" alt="">
                                 </div>
-                                <div class="bg-light text-center p-4" style="text-wrap:wrap;">
+                                <div class="bg-light " style="text-wrap:wrap;">
                                     <h5 class="fw-bold mb-0">Abdulazeem O. AKINTOLA</h5>
                                     <small>National Diploma/Software Development Intern(2022)</small>
                                 </div>
                             </div>
                         </div>
 
-                          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                            <div class="team-item">
+                          <div class="  wow fadeInUp" data-wow-delay="0.9s">
+                            <div class="team-item-scroll">
                                 <div class="position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/esther.png" alt="">
                                 </div>
-                                <div class="bg-light text-center p-4" style="text-wrap:wrap;">
-                                    <h5 class="fw-bold mb-0">Esther O. AGBELESE</h5>
+                                <div class="bg-light " style="text-wrap:wrap;">
+                                    <h5 class="fw-bold">Esther O. AGBELESE</h5>
                                     <small>National Diploma Student Industrial Work Experience 2023</small>
                                 </div>
                             </div>
